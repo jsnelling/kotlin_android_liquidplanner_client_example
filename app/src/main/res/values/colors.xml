@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006a98</color>
+    <color name="colorPrimaryTransparent">#77006a98</color>
+    <color name="colorPrimaryDark">#5B5B5B</color>
+    <color name="colorAccent">#E19757</color>
+    <color name="colorPrimaryLight">#66D0FE</color>
+
+    <color name="LPBlue">#1690C6</color>
+    <color name="LPMutedGray">#777779</color>
+    <color name="LPDarkText">#373A36</color>
+
+    <color name="PanelHeaderGray">#DDDDDD</color>
+    <color name="PanelHeaderLightGray">#EEEEEE</color>
+</resources>

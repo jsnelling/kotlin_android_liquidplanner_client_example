@@ -1,0 +1,31 @@
+Attribution.txto
+--------------------------------------------------------------------------------
+
+Anko - https://github.com/Kotlin/anko 
+https://github.com//Kotlin/anko/blob/master/LICENSE
+
+EventBus - https://github.com/greenrobot/EventBus 
+https://github.com/greenrobot/EventBus/blob/master/LICENSE
+
+"Font Awesome by Dave Gandy - http://fontawesome.io".
+
+Hawk - https://github.com/orhanobut/hawk 
+https://github.com/orhanobut/hawk/blob/master/LICENSE
+
+Moshi - https://github.com/square/moshi 
+https://github.com/square/moshi/blob/master/LICENSE.txt
+
+OkHttp - https://github.com/square/ok
+http https://github.com/square/okhttp/blob/master/LICENSE.txt
+
+PaperParcel - https://github.com/grandstaish/paperparcel 
+https://github.com/grandstaish/paperparcel/blob/master/LICENSE.txt
+
+Picasso - https://github.com/square/picasso 
+https://github.com/square/picasso/blob/master/LICENSE.txt
+
+RichEditor - https://github.com/wasabeef/richeditor-android 
+https://github.com/wasabeef/richeditor-android/blob/master/LICENSE
+
+toolargetool - https://github.com/guardian/toolargetool 
+https://github.com/guardian/toolargetool/blob/master/LICENSE.md

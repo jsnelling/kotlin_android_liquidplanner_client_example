@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">KotlinAndroid</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_spaces_navigation">SpacesNavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="author_avatar">author avatar</string>
+    <string name="view_projects">Projects</string>
+    <string name="view_comments">Comments</string>
+    <string name="view_timers">Timers</string>
+    <string name="log_out">Log Out</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">Password</string>
+    <string name="stay_signed_in">Keep me signed in on this device</string>
+    <string name="login_production">Production</string>
+    <string name="login_dogfood">Dogfood</string>
+    <string name="login_other">other</string>
+    <string name="use">Use</string>
+    <string name="clear">Clear</string>
+    <string name="treeitem_icon">treeitem icon</string>
+    <string name="search_for_treeitem">Find Existing Item</string>
+    <string name="log_progress">Log Progress</string>
+    <string name="track_time_for">Track Time for</string>
+    <string name="activity">Activity</string>
+    <string name="time">Time</string>
+    <string name="comment">Comment</string>
+    <string name="post">Post</string>
+    <string name="reply_all">Reply All</string>
+    <string name="reply">Reply</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="field_label_description">Description</string>
+    <string name="field_label_delay_until">Delay Until</string>
+    <string name="field_label_deadline">Deadline</string>
+    <string name="field_label_item_type">Item Type</string>
+    <string name="field_label_status">Status</string>
+    <string name="active">Active</string>
+    <string name="done">Done</string>
+    <string name="description_start_stop">Start / Stop Timer</string>
+    <string name="description_timer_options">Timer Options</string>
+    <string name="description_timer">Elapsed Timer Time</string>
+    <string name="user">User</string>
+    <string name="today">Today</string>
+    <string name="field_label_on_hold">On Hold</string>
+    <string name="field_label_milestone_date">Date</string>
+    <string name="field_label_package">Package</string>
+
+    <string-array name="treeitem_status">
+        <item>@string/active</item>
+        <item>@string/done</item>
+    </string-array>
+    <string name="field_label_project">Project</string>
+    <string name="field_label_client">Client</string>
+    <string name="field_label_max_effort">Max Effort</string>
+    <string name="item_details">Item Details</string>
+    <string name="custom_fields">Custom Fields</string>
+    <string name="field_label_activity">Default Activity</string>
+    <string name="field_label_manual_alert">Manual Alert</string>
+    <string name="field_label_started_on">Started On</string>
+    <string name="new_checklist_item">Add Checklist Item...</string>
+    <string name="field_label_finish_e">Finish [E]</string>
+    <string name="field_label_start_e">Start [E]</string>
+    <string name="field_label_assignment_activity">Activity</string>
+    <string name="field_label_logged">Logged</string>
+    <string name="field_label_estimate">Estimate?</string>
+    <string name="choose_person">Choose Person</string>
+    <string name="estimate">estimate</string>
+    <string name="help_estimate">Best case - worst case</string>
+    <string name="daily_limit">Daily Limit</string>
+    <string name="help_daily_limit">Enter between 0.25 and 24 hours</string>
+    <string name="save">Save</string>
+</resources>

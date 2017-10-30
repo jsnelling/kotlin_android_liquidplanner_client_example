@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snelling_alaska.kotlin.liquidplanner_android_client">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.LandingScreenActivity"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.LandingScreenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.LandingScreenActivity" />
+        </activity>
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.CommentsListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.TimersListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.ProjectsListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.SearchTreeitemsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.LogProgressActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.RemainingEffortActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.shared.pickers.DatePickerActivity"
+            android:theme="@style/AppTheme.Dialog"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.shared.pickers.MemberListActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.shared.pickers.ActivityListActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.shared.pickers.ClientListActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.shared.pickers.HierarchyListActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.comments.CreateCommentActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.TreeitemPanel"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

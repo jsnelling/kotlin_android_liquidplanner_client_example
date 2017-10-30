@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkBox_isDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_owner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_owner" />
+
+    <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+        android:id="@+id/button_owner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        tools:text="Owner"
+        app:layout_constraintEnd_toStartOf="@+id/textView_start_e"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_isDone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_logged"
+        style="@style/LPFieldButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/field_label_logged"
+        android:text="Button"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toStartOf="@id/button_estimate"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/button_owner"
+        app:layout_constraintTop_toBottomOf="@+id/button_owner"
+        tools:text="@string/field_label_logged" />
+
+    <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+        android:id="@+id/button_estimate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/field_label_estimate"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/button_logged"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/button_logged"
+        app:layout_constraintTop_toTopOf="@+id/button_logged"
+        tools:text="@string/field_label_estimate" />
+
+    <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+        android:id="@+id/button_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/field_label_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/button_logged"
+        app:layout_constraintTop_toBottomOf="@+id/button_logged"
+        tools:text="@string/field_label_assignment_activity" />
+
+    <TextView
+        android:id="@+id/textView_start_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_owner"
+        app:layout_constraintEnd_toStartOf="@+id/textView_finish_e"
+        app:layout_constraintTop_toTopOf="@+id/button_owner"
+        tools:text="@string/field_label_start_e" />
+
+    <TextView
+        android:id="@+id/textView_finish_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_start_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_start_e"
+        tools:text="@string/field_label_finish_e" />
+
+    <ImageView
+        android:id="@+id/imageView_drag"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_logged"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_isDone"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_isDone"
+        app:layout_constraintTop_toTopOf="@+id/button_logged"
+        app:srcCompat="@mipmap/ic_reorder" />
+
+</android.support.constraint.ConstraintLayout>

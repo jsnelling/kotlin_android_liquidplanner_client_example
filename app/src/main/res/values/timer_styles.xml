@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="playPauseSrcCompat" format="reference" />
+
+    <style name="TimerInactive" parent="AppTheme">
+        <item name="colorPrimary">#E19757</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="playPauseSrcCompat">@android:drawable/ic_media_play</item>
+    </style>
+
+    <style name="TimerActive" parent="AppTheme">
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorAccent">#E19757</item>
+        <item name="playPauseSrcCompat">@android:drawable/ic_media_pause</item>
+    </style>
+</resources>

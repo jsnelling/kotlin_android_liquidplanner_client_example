@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/panel_checkbox_is_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/panel_editText_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_checkbox_is_done"
+        app:layout_constraintEnd_toStartOf="@+id/panel_timerView"
+        app:layout_constraintStart_toEndOf="@+id/panel_checkbox_is_done"
+        app:layout_constraintTop_toTopOf="@+id/panel_checkbox_is_done"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/panel_textView_crumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/panel_editText_name"
+        app:layout_constraintTop_toBottomOf="@+id/panel_editText_name"
+        tools:text="BreadCrumb" />
+
+    <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.timers.TimerView
+        android:id="@+id/panel_timerView"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_editText_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panel_editText_name" />
+
+</android.support.constraint.ConstraintLayout>

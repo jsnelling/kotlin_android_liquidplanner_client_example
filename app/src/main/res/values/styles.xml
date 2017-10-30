@@ -1,0 +1,137 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    //----------------------------------------------------------------------------------------------
+
+    <style name="AppTheme.Dialog.Title">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">10pt</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/AppTheme.Dialog.Title</item>
+    </style>
+
+
+    //----------------------------------------------------------------------------------------------
+
+    <style
+        name="Widget.Button.Toggle"
+        parent="android:Widget"
+    >
+        <item name="android:background">@drawable/ic_section_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style
+        name="toggleButton"
+        parent="android:Theme.Black"
+    >
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+    //----------------------------------------------------------------------------------------------
+
+    <style
+        name="LabelFont"
+        parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:fontFeatureSettings">smcp</item>
+    </style>
+
+    <style
+        name="PanelLabelFont"
+        parent="LabelFont">
+       <item name="android:textStyle">bold</item>
+    </style>
+
+    <style
+        name="StrongLink"
+        parent="LabelFont">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/LPBlue</item>
+    </style>
+
+
+    <style
+        name="LPFieldButton"
+        parent="android:Widget.Material.Button.Borderless">
+        <item name="android:minHeight">10dp</item>
+    </style>
+
+    <style
+        name="LPFieldButton.Inactive"
+        parent="LPFieldButton">
+        <item name="android:textColor">@color/LPMutedGray</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style
+        name="LPFieldButton.Action"
+        parent="android:Widget.Material.Button">
+        <item name="android:backgroundTint">@color/colorPrimaryLight</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style
+        name="LPFieldCell"
+    >
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/view_bordered</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style
+        name="LPFieldCell.Header"
+        parent="PanelLabelFont"
+    >
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/view_bordered_background</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style
+        name="LPFieldCell.NoMargin"
+        parent="LPFieldCell"
+        >
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style
+        name="LPFieldCell.NoMargin.EditText"
+        parent="LPFieldCell.NoMargin">
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style
+        name="LPInput">
+        <item name="android:textColor">@color/LPBlue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

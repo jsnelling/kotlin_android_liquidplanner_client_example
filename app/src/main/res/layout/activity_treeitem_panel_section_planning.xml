@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/panel_textView_package_icon"
+                android:src="@mipmap/ic_ti_package"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_marginRight="4dp"
+            />
+
+            <TextView
+                android:id="@+id/panel_textView_package_label"
+                style="@style/PanelLabelFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_label_package" />
+
+            <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+                android:id="@+id/panel_button_package"
+                android:background="@drawable/view_bordered"
+                style="@style/LPFieldCell"
+                tools:text="@string/field_label_package" />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/panel_textView_project_icon"
+                android:src="@mipmap/ic_ti_project"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_marginRight="4dp"
+            />
+
+            <TextView
+                android:id="@+id/panel_textView_project_label"
+                style="@style/PanelLabelFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_label_project" />
+
+            <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+                android:id="@+id/panel_button_project"
+                android:background="@drawable/view_bordered"
+                style="@style/LPFieldCell"
+                tools:text="@string/field_label_project" />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/panel_textView_client_icon"
+                android:src="@mipmap/ic_ti_client"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_marginRight="4dp"
+            />
+
+            <TextView
+                android:id="@+id/panel_textView_client_label"
+                style="@style/PanelLabelFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_label_client" />
+
+            <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+                android:id="@+id/panel_button_client"
+                android:background="@drawable/view_bordered"
+                style="@style/LPFieldCell"
+                tools:text="@string/field_label_client" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton_itemDetails"
+        style="@style/toggleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_section_toggle_bg"
+        android:checked="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/textView_itemDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/item_details"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton_itemDetails"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton_itemDetails"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton_itemDetails" />
+
+    <TableLayout
+        android:id="@+id/tableLayout_itemDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:padding="10dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton_itemDetails">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/panel_textView_started_on_label"
+                style="@style/LPFieldCell.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_label_started_on" />
+
+            <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+                android:id="@+id/panel_button_started_on"
+                android:background="@drawable/view_bordered"
+                style="@style/LPFieldCell.NoMargin.EditText"
+                tools:text="@string/field_label_started_on" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/panel_textView_max_effort_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                style="@style/LPFieldCell.Header"
+                android:text="@string/field_label_max_effort" />
+
+            <EditText
+                android:id="@+id/panel_editText_max_effort"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                style="@style/LPFieldCell.NoMargin.EditText"
+                tools:text="@string/field_label_max_effort" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/panel_textView_activity_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                style="@style/LPFieldCell.Header"
+                android:text="@string/field_label_activity" />
+
+            <com.snelling_alaska.kotlin.liquidplanner_android_client.ui.panel.ClearableButtonView
+                android:id="@+id/panel_button_activity"
+                android:background="@drawable/view_bordered"
+                style="@style/LPFieldCell.NoMargin"
+                tools:text="@string/field_label_activity" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/panel_textView_manual_alert_label"
+                style="@style/LPFieldCell.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_label_manual_alert" />
+
+            <EditText
+                android:id="@+id/panel_editText_manual_alert"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                style="@style/LPFieldCell.NoMargin.EditText"
+                tools:text="@string/field_label_manual_alert" />
+        </TableRow>
+    </TableLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton_itemCustomFields"
+        style="@style/toggleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_section_toggle_bg"
+        android:checked="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_itemDetails" />
+
+    <TextView
+        android:id="@+id/textView_itemCustomFields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/custom_fields"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton_itemCustomFields"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton_itemCustomFields"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton_itemCustomFields" />
+
+</android.support.constraint.ConstraintLayout>

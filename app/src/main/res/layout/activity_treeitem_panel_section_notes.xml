@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_containers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/button_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <jp.wasabeef.richeditor.RichEditor
+            android:id="@+id/richView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_editNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/view_containers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <HorizontalScrollView
+        android:id="@+id/button_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_containers"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_undo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_redo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_bold"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_italic"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_subscript"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_superscript"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_strikethrough"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_underline"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_h1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="H1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_h2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="H2"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_h3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="H3"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_h4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="H4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_h5"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="H5"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_h6"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="H6"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_text_color"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_bg_color"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_indent"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_outdent"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_align_left"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_align_center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_align_right"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_bullets"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_numbers"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_blockquote"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_insert_image"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_insert_link"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

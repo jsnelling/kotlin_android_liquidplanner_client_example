@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_undo">&#xf0e2;</string>
+    <string name="icon_redo">&#xf01e;</string>
+    <string name="icon_bold">&#xf032;</string>
+    <string name="icon_italic">&#xf033;</string>
+    <string name="icon_subscript">&#xf12c;</string>
+    <string name="icon_superscript">&#xf12b;</string>
+    <string name="icon_strikethrough">&#xf0cc;</string>
+    <string name="icon_underline">&#xf0cd;</string>
+
+    <string name="icon_indent">&#xf03c;</string>
+    <string name="icon_outdent">&#xf03b;</string>
+    <string name="icon_align_left">&#xf036;</string>
+    <string name="icon_align_right">&#xf038;</string>
+    <string name="icon_align_center">&#xf037;</string>
+    <string name="icon_align_justify">&#xf039;</string>
+    <string name="icon_bullets">&#xf0ca;</string>
+    <string name="icon_numbers">&#xf0cb;</string>
+    <string name="icon_blockquote">&#xf10d;</string>
+    <string name="icon_image">&#xf03e;</string>
+    <string name="icon_link">&#xf0c1;</string>
+
+    <string name="icon_square">&#xf0c8;</string>
+</resources>
